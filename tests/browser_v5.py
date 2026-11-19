@@ -33,11 +33,23 @@ try:
             ctx.route('https://avatars.githubusercontent.com/**',lambda r:r.abort())
             ctx.route('https://raw.githubusercontent.com/**',lambda r:r.abort())
             p=ctx.new_page();errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
-            for width in (1440,768,390):
+            for width in (1440,768,390,320):
                 p.set_viewport_size({'width':width,'height':900})
                 for path in ('/','/cv.html','/experience.html','/project-hbx.html'):
                     visit(p,path);size(p,(engine,width,path))
                     if engine=='chromium': p.screenshot(path=str(ART/f"{path.strip('/').replace('.html','') or 'home'}-{width}.png"),animations='disabled')
+            visit(p,'/')
+            p.locator('.menu-toggle').click()
+            expect(p.locator('.menu-toggle')).to_have_attribute('aria-expanded','true')
+            p.keyboard.press('Escape')
+            expect(p.locator('.menu-toggle')).to_have_attribute('aria-expanded','false')
+            p.locator('#command-open').click()
+            expect(p.locator('#command-dialog')).to_be_visible()
+            p.locator('#command-search').fill('resume')
+            p.locator('#command-close').click()
+            p.locator('#json-input').fill('{"a":1}')
+            p.locator('#json-format').click()
+            expect(p.locator('#json-output')).to_contain_text('"a": 1')
             visit(p,'/experience.html')
             p.locator('#catalog-search').fill('HyperBoostX')
             assert p.locator('.u-project:visible').count()>=2
