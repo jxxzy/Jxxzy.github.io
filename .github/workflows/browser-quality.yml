@@ -1,0 +1,51 @@
+name: Browser quality and performance
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install playwright==1.51.0
+      - run: python -m playwright install --with-deps chromium firefox webkit
+      - run: python tests/browser_v5.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence
+          path: browser-evidence/
+          if-no-files-found: ignore
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-save --no-package-lock lighthouse@12.6.0 @axe-core/playwright@4.10.2 playwright@1.51.0
+      - run: npx playwright install --with-deps chromium
+      - run: |
+          mkdir -p audit-results
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/http.log 2>&1 &
+          sleep 2
+          export CHROME_PATH=$(node -e "console.log(require('playwright').chromium.executablePath())")
+          for page in index cv experience; do
+            npx lighthouse "http://127.0.0.1:8765/$page.html" --chrome-flags="--headless --no-sandbox" --output=json --output-path="./audit-results/$page-lighthouse.json" --quiet
+          done
+          node tests/accessibility.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: accessibility-and-lighthouse
+          path: audit-results/
+          if-no-files-found: ignore
