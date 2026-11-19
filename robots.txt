@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jxxzy.github.io/sitemap.xml
