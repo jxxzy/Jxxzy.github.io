@@ -65,6 +65,10 @@ try:
             p.locator('#release-load').click();expect(p.locator('#release-results')).to_contain_text('v-test')
             p.locator('#api-run').click();expect(p.locator('#api-output')).to_contain_text('jxxzy')
             p.locator('#run-code').click();expect(p.frame_locator('#code-frame').locator('h2')).to_have_text('Hello, MR.4NONY')
+            p.locator('#html-code').fill('<h2 onclick="alert(1)">Safe</h2><script>alert(1)</script><iframe src="https://example.com"></iframe><meta http-equiv="refresh" content="0;url=https://example.com">')
+            p.locator('#run-code').click()
+            expect(p.frame_locator('#code-frame').locator('h2')).to_have_text('Safe')
+            assert p.frame_locator('#code-frame').locator('script, iframe, meta[http-equiv=refresh], [onclick]').count()==0
             p.locator('#inquiry-scope').fill('Test scope');p.locator('#inquiry-form button[type=submit]').click()
             expect(p.locator('#inquiry-output')).to_contain_text('Test scope')
             p.locator('#u-contrast').click();assert p.locator('html').evaluate("x=>x.classList.contains('high-contrast')")

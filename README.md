@@ -132,3 +132,5 @@ Browser quality workflow runs Chromium, Firefox, WebKit on desktop/tablet/mobile
 ### Stable gates
 
 Source, document generation and deployment are necessary but not sufficient. Require passing desktop/tablet/mobile browser interaction tests, offline navigation and actual artifact downloads; review Lighthouse and axe reports, visual output, external links, security and content evidence before labeling a release Stable. The 3D view is CSS, activity calendar is sampled public events, and job matching is not an ATS certification. TopoSurvey animation is now opt-in. No unverifiable credentials or visual assets are fabricated.
+
+The automated stable quality gate requires all browser cases, Lighthouse performance >=95 and SEO=100 on index/CV/experience, zero serious or critical axe violations, structural checks, and PDF/DOCX integrity. Reports are uploaded even on failure. Manual visual review and deployment checks remain separate. The playground filters markup to an inert subset and uses a sandboxed frame.

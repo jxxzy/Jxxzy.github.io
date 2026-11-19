@@ -49,3 +49,21 @@ jobs:
           name: accessibility-and-lighthouse
           path: audit-results/
           if-no-files-found: ignore
+
+  stable-gate:
+    needs: [browser, audit]
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Final structural and document integrity checks
+        run: |
+          python3 tests/check_site.py
+          python3 tests/check_v5.py
+          sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+          python3 tests/check_resume.py
+      - name: Record gate summary
+        run: |
+          echo 'Browser interactions, offline core, Lighthouse and axe quality gates, structural and document checks passed for this commit.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Manual visual review, live link review and deployment verification are separate release requirements.' >> "$GITHUB_STEP_SUMMARY"
