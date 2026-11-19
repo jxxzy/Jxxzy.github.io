@@ -120,3 +120,7 @@ Motion is disabled by the preference toggle or OS reduced-motion setting. Illust
 ## Career Center
 
 The web resume provides 11 career/document variants, two languages, technical evidence, and 66 generated downloads. `data/resume.json` is the curated source, `scripts/build_resume.py` regenerates PDF/DOCX. Build with `pip install reportlab python-docx` and `python scripts/build_resume.py`; validate with `python tests/check_resume.py` (Poppler). The resume documents workflow generates checked artifacts and publishes them to the repository when permitted. Web layout and document rendering still require separate visual review. No invented employment, certificates, publication, GPA or results.
+
+## V5 developer experience
+
+Ten standalone project records, verified repository screenshot references, project comparison, public GitHub dashboard, releases, technical notes, local HTML/CSS sandbox, fixed GET API explorer, snippets, inquiry brief, accessibility preferences and vCard. No fabricated screenshots or credentials. CSS 3D is used instead of external WebGL dependencies.

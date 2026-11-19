@@ -1,0 +1,141 @@
+[
+  {
+    "id": "hbx",
+    "name": "HyperBoostX",
+    "status": "Published v2.10.0 (unsigned)",
+    "statusID": "Rilis v2.10.0 (unsigned)",
+    "stack": "Windows, C#, PowerShell",
+    "en": "Windows diagnostics and preview-first optimization, Safety Guard and recovery visibility. Published installer and SHA-256 evidence; no guaranteed FPS improvements.",
+    "idText": "Diagnostik dan optimasi Windows dengan preview, Safety Guard dan visibilitas pemulihan. Installer dan bukti SHA-256 telah dirilis; tanpa jaminan peningkatan FPS.",
+    "url": "https://github.com/jxxzy/HyperBoostX",
+    "evidence": "https://github.com/jxxzy/HyperBoostX/releases/tag/v2.10.0",
+    "media": [
+      [
+        "https://raw.githubusercontent.com/jxxzy/HyperBoostX/HEAD/docs/screenshots/v2.10.0-final/dashboard.png",
+        "HyperBoostX v2.10.0 • dashboard.png"
+      ],
+      [
+        "https://raw.githubusercontent.com/jxxzy/HyperBoostX/HEAD/docs/screenshots/v2.10.0-final/gaming-mode.png",
+        "HyperBoostX v2.10.0 • gaming-mode.png"
+      ],
+      [
+        "https://raw.githubusercontent.com/jxxzy/HyperBoostX/HEAD/docs/screenshots/v2.10.0-final/cleanup.png",
+        "HyperBoostX v2.10.0 • cleanup.png"
+      ]
+    ]
+  },
+  {
+    "id": "v3",
+    "name": "HyperBoostX V3",
+    "status": "In development",
+    "statusID": "Dalam pengembangan",
+    "stack": "C#, .NET, SQLite, DPAPI, PowerShell",
+    "en": "Next-generation desktop utility: diagnostics, explicit approval, encrypted backup, rollback and CLI recovery. Final Stable is not claimed.",
+    "idText": "Utilitas desktop generasi baru: diagnostik, persetujuan, backup terenkripsi, rollback dan CLI pemulihan. Belum diklaim Final Stable.",
+    "url": "https://github.com/NEXORAID-ID/hyperboostx-v3",
+    "evidence": "https://nexoraid-id.github.io/hyperboostx-v3-prototype/",
+    "media": [],
+    "demo": "https://nexoraid-id.github.io/hyperboostx-v3-prototype/"
+  },
+  {
+    "id": "topo",
+    "name": "TopoSurvey",
+    "status": "GitHub Workflow team contributor",
+    "statusID": "Kontributor tim GitHub Workflow",
+    "stack": "Flutter, Dart, GitHub Actions, SemVer, CodeQL",
+    "en": "Team scope: repository management, CI/CD, automated tests, versioning, APK build, checksum and releases. Flutter CI and CodeQL passed; not claiming sole authorship.",
+    "idText": "Cakupan tim: manajemen repositori, CI/CD, tes otomatis, versioning, build APK, checksum dan rilis. Flutter CI dan CodeQL lulus; bukan klaim karya individu seluruhnya.",
+    "url": "https://github.com/SIG-3B/Toposurvey",
+    "evidence": "https://github.com/SIG-3B/Toposurvey/actions/runs/44421964673",
+    "media": [
+      [
+        "https://raw.githubusercontent.com/SIG-3B/Toposurvey/HEAD/docs/assets/toposurvey-hero.gif",
+        "TopoSurvey official hero animation (not an app screenshot)"
+      ]
+    ]
+  },
+  {
+    "id": "gis",
+    "name": "Skeleton Geospatial GIS",
+    "status": "Academic GIS project",
+    "statusID": "Proyek akademik GIS",
+    "stack": "JavaScript, GeoJSON, CrootJS, OpenStreetMap, MongoDB",
+    "en": "Interactive browser map with 10 sample routes, route selection and distance/duration estimates; MongoDB 2dsphere indexing and spatial query examples. Data is illustrative.",
+    "idText": "Peta interaktif browser dengan 10 contoh rute, pemilihan rute dan estimasi jarak/durasi; indeks MongoDB 2dsphere dan contoh kueri spasial. Data bersifat ilustratif.",
+    "url": "https://github.com/jxxzy/skeleton-geospasial-gis",
+    "evidence": "https://github.com/jxxzy/skeleton-geospasial-gis#readme",
+    "media": []
+  },
+  {
+    "id": "pbo",
+    "name": "PBO II Learning Platform",
+    "status": "Academic software project",
+    "statusID": "Proyek software akademik",
+    "stack": "C#, ASP.NET Core MVC, EF Core, REST API, JavaScript",
+    "en": "Learning site with 11 OOP chapters, practice projects, quizzes and local progress. Console, MVC and REST API exercises plus documented build and deployment.",
+    "idText": "Situs belajar 11 bab OOP, praktikum, kuis dan progres lokal. Latihan console, MVC dan REST API serta dokumentasi build dan deployment.",
+    "url": "https://github.com/jxxzy/pbo-ll",
+    "evidence": "https://github.com/jxxzy/pbo-ll#readme",
+    "media": []
+  },
+  {
+    "id": "aint",
+    "name": "AintSaint Website",
+    "status": "Web development project",
+    "statusID": "Proyek pengembangan web",
+    "stack": "HTML, CSS, JavaScript, JSON, GitHub Pages",
+    "en": "Static data-driven website with dynamic detail pages, content filtering and booking integration. Contact data requires verification.",
+    "idText": "Website statis berbasis data dengan halaman detail dinamis, filter konten dan integrasi booking. Data kontak memerlukan verifikasi.",
+    "url": "https://github.com/jxxzy/AintSaint.github.io",
+    "evidence": "https://github.com/jxxzy/AintSaint.github.io#readme",
+    "media": []
+  },
+  {
+    "id": "go",
+    "name": "GIS-GOLANG",
+    "stack": "Go / GIS",
+    "status": "Public repository",
+    "statusID": "Repositori publik",
+    "en": "Explore the public source and history. No unverified outcomes claimed.",
+    "idText": "Jelajahi source dan riwayat publik. Tidak ada klaim hasil yang belum diverifikasi.",
+    "url": "https://github.com/jxxzy/GIS-GOLANG",
+    "evidence": "https://github.com/jxxzy/GIS-GOLANG#readme",
+    "media": []
+  },
+  {
+    "id": "layer",
+    "name": "Open Layer",
+    "stack": "Web mapping",
+    "status": "Public repository",
+    "statusID": "Repositori publik",
+    "en": "Explore the public source and history. No unverified outcomes claimed.",
+    "idText": "Jelajahi source dan riwayat publik. Tidak ada klaim hasil yang belum diverifikasi.",
+    "url": "https://github.com/jxxzy/open-layer",
+    "evidence": "https://github.com/jxxzy/open-layer#readme",
+    "media": []
+  },
+  {
+    "id": "hook",
+    "name": "Webhooks",
+    "stack": "Integration",
+    "status": "Public repository",
+    "statusID": "Repositori publik",
+    "en": "Explore the public source and history. No unverified outcomes claimed.",
+    "idText": "Jelajahi source dan riwayat publik. Tidak ada klaim hasil yang belum diverifikasi.",
+    "url": "https://github.com/jxxzy/webhooks",
+    "evidence": "https://github.com/jxxzy/webhooks#readme",
+    "media": []
+  },
+  {
+    "id": "gcf",
+    "name": "GCF Backend",
+    "stack": "Backend",
+    "status": "Public repository",
+    "statusID": "Repositori publik",
+    "en": "Explore the public source and history. No unverified outcomes claimed.",
+    "idText": "Jelajahi source dan riwayat publik. Tidak ada klaim hasil yang belum diverifikasi.",
+    "url": "https://github.com/jxxzy/gcfbackend",
+    "evidence": "https://github.com/jxxzy/gcfbackend#readme",
+    "media": []
+  }
+]
