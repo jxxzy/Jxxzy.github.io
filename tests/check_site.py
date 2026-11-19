@@ -64,3 +64,20 @@ assert '"alternateName":"MR.4NONY"' in home
 assert '<strong>MR.4NONY</strong>' in home
 assert 'MR.4NONY' in (ROOT/'assets/brand.svg').read_text(encoding='utf-8')
 print('PASS: developer brand, monogram, résumé and metadata')
+
+# Engineering edition navigation and control coverage.
+sections = ["home","about","identity","journey","education","work","flagship","cases","skills","engineering","architecture","workflow","quality","security","research","methodology","opensource","repositories","activity","nexoraid","services","labs","notes","resources","faq","contact"]
+assert all(s in pages['index.html'].ids for s in sections)
+controls = ['command-open','command-dialog','command-search','project-search','project-sort','saved-only','project-count','load-repos','repo-search','repo-sort','repo-forks','load-events','json-input','json-format','json-minify','json-copy','text-input','url-encode','url-decode','text-copy','hash-file','hash-run','hash-copy','fg-color','bg-color','contrast-result','copy-alias','copy-email','motion-toggle','back-top','subject','footer-explore']
+assert set(controls)<=pages['index.html'].ids
+js=(ROOT/'assets/js/premium.js').read_text(encoding='utf-8')
+assert all(('#'+s) in js for s in controls if s not in ['subject'])
+assert home.count('data-project="')==10
+assert home.count('data-save="')==10
+assert 'SHA-256' in js and 'crypto.subtle.digest' in js
+assert 'users/jxxzy/repos' in js and 'users/jxxzy/events/public' in js
+css=(ROOT/'assets/css/styles.css').read_text(encoding='utf-8')
+import re
+assert len(set(re.findall(r'@keyframes\s+([\w-]+)',css)))>=20
+assert 'prefers-reduced-motion' in css and '.paused' in css
+print('PASS: 26 sections, 10 project cards, 32 control IDs, public API and motion declarations')

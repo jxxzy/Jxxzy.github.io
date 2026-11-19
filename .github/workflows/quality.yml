@@ -14,4 +14,6 @@ jobs:
       - name: Validate pages and local links
         run: python3 tests/check_site.py
       - name: Check JavaScript syntax
-        run: node --check assets/js/main.js
+        run: |
+          node --check assets/js/main.js
+          node --check assets/js/premium.js

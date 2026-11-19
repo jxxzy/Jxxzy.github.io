@@ -27,3 +27,92 @@ Revoke the old SMTPJS token through its provider; removal from current files doe
 ## License
 
 See LICENSE. Original personal media remains subject to its owner's rights.
+
+## Engineering edition
+
+### Implemented navigation and functions
+
+1. 26 homepage sections
+2. Command palette and searchable navigation
+3. Keyboard Ctrl/Cmd+K
+4. Search projects
+5. Category filters
+6. Alphabetical sort
+7. Saved projects
+8. Saved-only filter
+9. Project count
+10. Case study accordions
+11. Public GitHub profile stats
+12. Live repository explorer
+13. Repository search
+14. Repository sort
+15. Fork visibility filter
+16. Recent public GitHub events
+17. JSON validation
+18. JSON formatting
+19. JSON minification
+20. Copy formatted JSON
+21. Text character and word counter
+22. URL encoder
+23. URL decoder
+24. Copy transformed text
+25. Local SHA-256 file checksum
+26. Copy checksum
+27. Color contrast checker
+28. Copy developer alias
+29. Copy email address
+30. Contact topic selector
+31. Email draft form
+32. Theme switch
+33. Language switch
+34. Pause/resume animation
+35. Back to top
+36. Printable résumé
+37. FAQ accordions
+38. Open-source links
+39. DJ presskit redirect
+40. Privacy page
+41. Custom 404
+
+### Implemented motion effects (38)
+
+1. Canvas particles
+2. Pointer particle links
+3. Hero entrance
+4. Portrait entrance
+5. Orbit rotation
+6. Reverse orbit
+7. Floating tags
+8. Status pulse
+9. Ticker marquee
+10. Scroll reveal rise
+11. Reveal left
+12. Reveal right
+13. Reveal zoom
+14. Reveal clip
+15. Reveal perspective
+16. Gradient drift
+17. Signal pulse
+18. Portrait glow
+19. HUD pulse
+20. Hero scan
+21. Scroll cue
+22. Heading line
+23. Card spotlight
+24. Project art perspective
+25. Project symbol zoom
+26. Timeline node hover
+27. Tag lift
+28. Concept ring glow
+29. Concept bar breathing
+30. Detail expansion
+31. Architecture flow pulse
+32. NEXORAID float
+33. Saved star pop
+34. Results entrance
+35. Command dialog entrance
+36. Toast entrance
+37. Nav underline
+38. Button lift
+
+Motion is disabled by the preference toggle or OS reduced-motion setting. Illustrations are conceptual, not product screenshots or live telemetry. Research treatments are proposals, not publication or measured results. Live GitHub features depend on public API availability and rate limits. Developer toolbox processes user inputs locally. The alias, photo and DJ link remain separate.
