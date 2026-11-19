@@ -41,6 +41,7 @@ for name,p in pages.items():
         if u.scheme or u.netloc: continue
         target=unquote(u.path).lstrip('/') or ('index.html' if u.path=='/' else name)
         target=target or 'index.html'
+        if target.startswith('downloads/') and not (ROOT/'data/resume-manifest.json').exists(): continue
         assert (ROOT/target).is_file(), (name,link)
         if u.fragment and target in pages: assert u.fragment in pages[target].ids,(name,link)
 ET.parse(ROOT/'sitemap.xml')

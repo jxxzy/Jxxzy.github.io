@@ -17,3 +17,5 @@ jobs:
         run: |
           node --check assets/js/main.js
           node --check assets/js/premium.js
+
+          node --check assets/js/resume.js

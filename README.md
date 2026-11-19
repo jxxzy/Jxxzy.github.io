@@ -116,3 +116,7 @@ See LICENSE. Original personal media remains subject to its owner's rights.
 38. Button lift
 
 Motion is disabled by the preference toggle or OS reduced-motion setting. Illustrations are conceptual, not product screenshots or live telemetry. Research treatments are proposals, not publication or measured results. Live GitHub features depend on public API availability and rate limits. Developer toolbox processes user inputs locally. The alias, photo and DJ link remain separate.
+
+## Career Center
+
+The web resume provides 11 career/document variants, two languages, technical evidence, and 66 generated downloads. `data/resume.json` is the curated source, `scripts/build_resume.py` regenerates PDF/DOCX. Build with `pip install reportlab python-docx` and `python scripts/build_resume.py`; validate with `python tests/check_resume.py` (Poppler). The resume documents workflow generates checked artifacts and publishes them to the repository when permitted. Web layout and document rendering still require separate visual review. No invented employment, certificates, publication, GPA or results.

@@ -1,0 +1,204 @@
+{
+  "person": {
+    "name": "Daslan Josua Valentino Siahaan",
+    "alias": "MR.4NONY",
+    "email": "greensento@gmail.com",
+    "avatar": "https://avatars.githubusercontent.com/u/71040617?v=4",
+    "github": "https://github.com/jxxzy"
+  },
+  "roles": [
+    [
+      "software",
+      "Software Engineer",
+      "Software Engineer",
+      "Maintainable systems, Windows utilities and web applications.",
+      "Sistem terawat, utilitas Windows dan aplikasi web.",
+      "hbx,v3,pbo,topo"
+    ],
+    [
+      "windows",
+      "Windows Application Developer",
+      "Developer Aplikasi Windows",
+      "Local diagnostics, safe changes, recovery and packaging.",
+      "Diagnostik lokal, perubahan aman, pemulihan dan packaging.",
+      "hbx,v3,pbo,topo"
+    ],
+    [
+      "fullstack",
+      "Full-Stack Developer",
+      "Full-Stack Developer",
+      "Web interfaces, APIs, data and deployment.",
+      "Antarmuka web, API, data dan deployment.",
+      "pbo,gis,aint,hbx"
+    ],
+    [
+      "devops",
+      "DevOps / CI/CD Engineer",
+      "DevOps / CI/CD Engineer",
+      "GitHub Actions, verification, artifacts and automated releases.",
+      "GitHub Actions, verifikasi, artefak dan otomasi rilis.",
+      "topo,hbx,pbo,v3"
+    ],
+    [
+      "mobile",
+      "Junior Mobile Developer",
+      "Junior Mobile Developer",
+      "Mobile team projects, Flutter workflows and application fundamentals.",
+      "Proyek tim mobile, workflow Flutter dan dasar aplikasi.",
+      "topo,pbo,gis,aint"
+    ],
+    [
+      "gis",
+      "Geospatial Developer",
+      "Geospatial Developer",
+      "Spatial data, maps and geographic information systems.",
+      "Data spasial, peta dan sistem informasi geografis.",
+      "gis,topo,pbo,aint"
+    ],
+    [
+      "ai",
+      "Software Engineering AI Trainer",
+      "Software Engineering AI Trainer",
+      "Technical documentation, reproducible examples and code evaluation interests.",
+      "Dokumentasi teknis, contoh reproduktif dan minat evaluasi kode.",
+      "pbo,hbx,topo,v3"
+    ],
+    [
+      "academic",
+      "Academic CV",
+      "CV Akademik",
+      "Applied informatics, research interests and academic projects.",
+      "Informatika terapan, minat penelitian dan proyek akademik.",
+      "pbo,gis,topo,v3"
+    ],
+    [
+      "technical",
+      "Technical Portfolio",
+      "Portofolio Teknis",
+      "Project implementation scope and technical evidence.",
+      "Cakupan implementasi proyek dan bukti teknis.",
+      "hbx,v3,topo,gis,pbo,aint"
+    ],
+    [
+      "executive",
+      "Executive Resume",
+      "Resume Eksekutif",
+      "Founder, product direction and practical engineering.",
+      "Pendiri, arah produk dan engineering praktis.",
+      "hbx,v3,topo,pbo"
+    ],
+    [
+      "master",
+      "Master CV",
+      "CV Master",
+      "Comprehensive project record and technical focus.",
+      "Rekam proyek lengkap dan fokus teknis.",
+      "hbx,v3,topo,gis,pbo,aint"
+    ]
+  ],
+  "projects": [
+    [
+      "hbx",
+      "HyperBoostX",
+      "Published v2.10.0 (unsigned)",
+      "Rilis v2.10.0 (unsigned)",
+      "Windows, C#, PowerShell",
+      "Windows diagnostics and preview-first optimization, Safety Guard and recovery visibility. Published installer and SHA-256 evidence; no guaranteed FPS improvements.",
+      "Diagnostik dan optimasi Windows dengan preview, Safety Guard dan visibilitas pemulihan. Installer dan bukti SHA-256 telah dirilis; tanpa jaminan peningkatan FPS.",
+      "https://github.com/jxxzy/HyperBoostX",
+      "https://github.com/jxxzy/HyperBoostX/releases/tag/v2.10.0"
+    ],
+    [
+      "v3",
+      "HyperBoostX V3",
+      "In development",
+      "Dalam pengembangan",
+      "C#, .NET, SQLite, DPAPI, PowerShell",
+      "Next-generation desktop utility: diagnostics, explicit approval, encrypted backup, rollback and CLI recovery. Final Stable is not claimed.",
+      "Utilitas desktop generasi baru: diagnostik, persetujuan, backup terenkripsi, rollback dan CLI pemulihan. Belum diklaim Final Stable.",
+      "https://github.com/NEXORAID-ID/hyperboostx-v3",
+      "https://nexoraid-id.github.io/hyperboostx-v3-prototype/"
+    ],
+    [
+      "topo",
+      "TopoSurvey",
+      "GitHub Workflow team contributor",
+      "Kontributor tim GitHub Workflow",
+      "Flutter, Dart, GitHub Actions, SemVer, CodeQL",
+      "Team scope: repository management, CI/CD, automated tests, versioning, APK build, checksum and releases. Flutter CI and CodeQL passed; not claiming sole authorship.",
+      "Cakupan tim: manajemen repositori, CI/CD, tes otomatis, versioning, build APK, checksum dan rilis. Flutter CI dan CodeQL lulus; bukan klaim karya individu seluruhnya.",
+      "https://github.com/SIG-3B/Toposurvey",
+      "https://github.com/SIG-3B/Toposurvey/actions/runs/44421964673"
+    ],
+    [
+      "gis",
+      "Skeleton Geospatial GIS",
+      "Academic GIS project",
+      "Proyek akademik GIS",
+      "JavaScript, GeoJSON, CrootJS, OpenStreetMap, MongoDB",
+      "Interactive browser map with 10 sample routes, route selection and distance/duration estimates; MongoDB 2dsphere indexing and spatial query examples. Data is illustrative.",
+      "Peta interaktif browser dengan 10 contoh rute, pemilihan rute dan estimasi jarak/durasi; indeks MongoDB 2dsphere dan contoh kueri spasial. Data bersifat ilustratif.",
+      "https://github.com/jxxzy/skeleton-geospasial-gis",
+      "https://github.com/jxxzy/skeleton-geospasial-gis#readme"
+    ],
+    [
+      "pbo",
+      "PBO II Learning Platform",
+      "Academic software project",
+      "Proyek software akademik",
+      "C#, ASP.NET Core MVC, EF Core, REST API, JavaScript",
+      "Learning site with 11 OOP chapters, practice projects, quizzes and local progress. Console, MVC and REST API exercises plus documented build and deployment.",
+      "Situs belajar 11 bab OOP, praktikum, kuis dan progres lokal. Latihan console, MVC dan REST API serta dokumentasi build dan deployment.",
+      "https://github.com/jxxzy/pbo-ll",
+      "https://github.com/jxxzy/pbo-ll#readme"
+    ],
+    [
+      "aint",
+      "AintSaint Website",
+      "Web development project",
+      "Proyek pengembangan web",
+      "HTML, CSS, JavaScript, JSON, GitHub Pages",
+      "Static data-driven website with dynamic detail pages, content filtering and booking integration. Contact data requires verification.",
+      "Website statis berbasis data dengan halaman detail dinamis, filter konten dan integrasi booking. Data kontak memerlukan verifikasi.",
+      "https://github.com/jxxzy/AintSaint.github.io",
+      "https://github.com/jxxzy/AintSaint.github.io#readme"
+    ]
+  ],
+  "skillGroups": [
+    [
+      "Programming",
+      "Pemrograman",
+      "C#, JavaScript, PowerShell"
+    ],
+    [
+      "Web & API",
+      "Web & API",
+      "HTML, CSS, ASP.NET Core MVC, REST API, EF Core"
+    ],
+    [
+      "Windows & systems",
+      "Windows & sistem",
+      ".NET, SQLite, DPAPI, diagnostics, backup, rollback"
+    ],
+    [
+      "Mobile & delivery",
+      "Mobile & distribusi",
+      "Flutter, Dart, Android workflows"
+    ],
+    [
+      "Geospatial & data",
+      "Geospasial & data",
+      "GeoJSON, CrootJS, OpenStreetMap, MongoDB"
+    ],
+    [
+      "DevOps & quality",
+      "DevOps & kualitas",
+      "Git, GitHub Actions, SemVer, CodeQL, SHA-256"
+    ]
+  ],
+  "updated": "2026-11-19",
+  "research": [
+    "Proposed controlled comparison of Windows default, software optimization, SSD and RAM upgrades; planned boot time, idle CPU/RAM, FPS and input latency measurements. No published results claimed.",
+    "Rencana perbandingan terkontrol Windows default, optimasi software, upgrade SSD dan RAM; pengukuran rencana waktu boot, CPU/RAM idle, FPS dan latensi input. Tidak mengklaim hasil publikasi."
+  ]
+}
