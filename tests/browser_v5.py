@@ -22,6 +22,9 @@ def visit(p,path):
     expect(p.locator('h1')).to_be_visible()
 def size(p,label):
     delta=p.evaluate('document.documentElement.scrollWidth - innerWidth')
+    if delta>2:
+        offenders=p.evaluate("""()=>Array.from(document.querySelectorAll('body *')).map(el=>({tag:el.tagName,id:el.id,cls:typeof el.className==='string'?el.className:'',right:Math.round(el.getBoundingClientRect().right),left:Math.round(el.getBoundingClientRect().left)})).filter(x=>x.right>innerWidth+2||x.left< -2).slice(0,20)""")
+        print('OVERFLOW',label,delta,offenders,flush=True)
     assert delta<=2,(label,delta)
 try:
     ready()
