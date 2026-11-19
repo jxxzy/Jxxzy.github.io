@@ -44,6 +44,13 @@ for name,p in pages.items():
         assert (ROOT/target).is_file(), (name,link)
         if u.fragment and target in pages: assert u.fragment in pages[target].ids,(name,link)
 ET.parse(ROOT/'sitemap.xml')
-assert (ROOT/'Jos1.PNG').is_file()
+home=(ROOT/'index.html').read_text(encoding='utf-8')
+cv=(ROOT/'cv.html').read_text(encoding='utf-8')
+assert 'src="https://avatars.githubusercontent.com/u/71040617?v=4"' in home
+assert 'img-src \'self\' data: https://avatars.githubusercontent.com;' in home
+assert 'href="https://github.com/jxxzymix/presskit"' in home
+assert 'id="music"' not in home and 'href="#music"' not in home
+assert 'performing artist' not in cv and 'DJ and music production' not in cv
+assert 'Jos1.PNG' not in home
 assert not (ROOT/'assets/CV-Yusup Supriyadi.pdf').exists()
 print(f'PASS: {len(pages)} HTML pages, local links, anchors, labels, asset references, sitemap, legacy cleanup')

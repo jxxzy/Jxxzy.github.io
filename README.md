@@ -1,6 +1,6 @@
 # JXXZY Portfolio
 
-Personal portfolio of Josua Siahaan — software, open source, NEXORAID and music.
+Personal portfolio of Josua Siahaan — software engineering, open source and NEXORAID. The separate DJ presskit is at https://github.com/jxxzymix/presskit.
 
 Live: https://jxxzy.github.io/
 
@@ -10,11 +10,11 @@ Dependency-free static HTML, CSS and JavaScript. Run `python3 -m http.server 800
 
 ## Features
 
-- Responsive premium bento layout, local portrait, canvas particles, orbit, ticker, reveal, equalizer and vinyl animations. Reduced motion support.
+- Responsive premium bento layout, GitHub profile avatar, canvas particles, orbit, ticker and reveal animations. Reduced motion support.
 - English/Indonesian interface and persistent theme preferences.
 - Filterable project cards, optional public GitHub statistics, printable résumé and email-client draft contact.
 - Canonical URLs, Open Graph, JSON-LD, favicon, robots and sitemap, custom 404 and privacy page.
-- No SMTP credentials, analytics or externally loaded scripts. The contact form does not send directly; it opens an email draft. No employment or certification claims imported from the old template.
+- No SMTP credentials, analytics or externally loaded scripts. The profile avatar is loaded from GitHub's avatar CDN. The contact form does not send directly; it opens an email draft. No employment or certification claims imported from the old template.
 
 ## Checks
 
