@@ -1,6 +1,6 @@
-# JXXZY Portfolio
+# MR.4NONY — Developer Portfolio
 
-Personal portfolio of Josua Siahaan — software engineering, open source and NEXORAID. The separate DJ presskit is at https://github.com/jxxzymix/presskit.
+Developer portfolio of Josua Siahaan (MR.4NONY) — software engineering, open source and NEXORAID. The separate DJ presskit is at https://github.com/jxxzymix/presskit.
 
 Live: https://jxxzy.github.io/
 

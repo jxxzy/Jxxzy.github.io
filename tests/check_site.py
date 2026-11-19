@@ -54,3 +54,13 @@ assert 'performing artist' not in cv and 'DJ and music production' not in cv
 assert 'Jos1.PNG' not in home
 assert not (ROOT/'assets/CV-Yusup Supriyadi.pdf').exists()
 print(f'PASS: {len(pages)} HTML pages, local links, anchors, labels, asset references, sitemap, legacy cleanup')
+
+# Developer alias is distinct from the external DJ presskit.
+for file in ROOT.glob('*.html'):
+    page=file.read_text(encoding='utf-8')
+    assert 'MR.4NONY' in page, file
+    assert 'JXXZY' not in page, file
+assert '"alternateName":"MR.4NONY"' in home
+assert '<strong>MR.4NONY</strong>' in home
+assert 'MR.4NONY' in (ROOT/'assets/brand.svg').read_text(encoding='utf-8')
+print('PASS: developer brand, monogram, résumé and metadata')
