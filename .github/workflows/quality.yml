@@ -19,3 +19,9 @@ jobs:
           node --check assets/js/premium.js
 
           node --check assets/js/resume.js
+
+          node --check assets/js/ultimate.js
+          node --check assets/js/site-v5.js
+          node --check sw.js
+      - name: Validate V5 features
+        run: python3 tests/check_v5.py

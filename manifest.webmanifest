@@ -1,0 +1,18 @@
+{
+  "id": "/",
+  "name": "MR.4NONY Developer Portfolio",
+  "short_name": "MR.4NONY",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#090b12",
+  "theme_color": "#090b12",
+  "icons": [
+    {
+      "src": "/assets/brand.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
